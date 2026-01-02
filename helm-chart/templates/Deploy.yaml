@@ -9,7 +9,7 @@ spec:
   selector: 
     matchLabels: 
       app: {{ .Values.appLabel }}
-    template: 
+  template: 
       metadata: 
         labels: 
           app: {{ .Values.appLabel}}
@@ -17,7 +17,7 @@ spec:
         containers: 
          - name: zomato-container 
            image: "{{ .Values.image.repository}}:{{ .Values.image.tag}}"
-           imagePullPolicy: {{ .Values.pullPolicy}}
+           imagePullPolicy: {{ .Values.image.pullPolicy}}
            ports: 
               - containerPort: {{ .Values.containerport }}
 
