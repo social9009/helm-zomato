@@ -1,6 +1,6 @@
 replicaCount: 2
 image:
-  repository: hitfast/zomato. # This is dockerhub repository name and image name It shouid understand from which repository it has to pull the image
+  repository: kastrov/zomato # This is dockerhub repository name and image name It shouid understand from which repository it has to pull the image
   tag: latest # This is the tag of the image
   pullPolicy: IfNotPresent # This is the image pull policy first it will check the image locally if not present then it will pull from the repository
 service:
